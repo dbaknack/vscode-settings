@@ -1,0 +1,663 @@
+{
+    "editor.minimap.renderCharacters":  false,
+    "editor.minimap.size": "fit",
+
+    //  PowerShell
+    "powershell.integratedConsole.focusConsoleOnExecute":       false,
+    "powershell.integratedConsole.forceClearScrollbackBuffer":  true,
+    "powershell.codeFormatting.addWhitespaceAroundPipe":        false,
+    "powershell.codeFormatting.autoCorrectAliases":             true,
+    "powershell.codeFormatting.useCorrectCasing":               true,
+    "powershell.integratedConsole.showOnStartup":               false,
+    "powershell.sideBar.CommandExplorerVisibility":             false,
+    "powershell.integratedConsole.startInBackground": true,
+
+   
+    // Editor Look
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.cursorWidth": 2,
+    "editor.guides.bracketPairs": false  ,
+    "editor.guides.indentation": false,
+
+    // Terminal Look
+    "terminal.integrated.cursorWidth":    2,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    "terminal.integrated.gpuAcceleration":"auto",
+    "terminal.integrated.smoothScrolling":true,
+    "workbench.colorCustomizations": {
+      "activityBarBadge.background": "#ff9100",
+      "activityBarBadge.foreground": "#202020"
+    },
+    
+
+    // Terminal on Mac
+    "terminal.integrated.defaultProfile.osx": "pwsh",
+    "terminal.integrated.profiles.osx": {
+        "PowerShell": {
+            "path":             "//usr//local//microsoft//powershell//7//pwsh",
+            "overrideName":     true,
+            "source":           "PowerShell",
+            "icon":             "terminal-powershell",
+            "color":            "terminal.ansiMagenta",
+            "args":             ["-Nologo"]
+            
+          }
+    },
+     //  Terminal on Windows
+     "terminal.integrated.defaultProfile.windows":  "PowerShell",
+     "terminal.explorerKind":                       "external",
+     "terminal.integrated.tabs.location":           "left",
+     "terminal.integrated.profiles.windows": {
+      "PowerShell-7": {
+        "source": "PowerShell",
+        "icon":   "terminal-powershell",
+        "path": "C:\\Program Files\\PowerShell\\7\\",
+        "color": "terminal.ansiMagenta",
+        "args": [
+          "-Nologo"
+        ]
+      },
+      "Command Prompt": {
+        "path": [
+          "${env:windir}\\Sysnative\\cmd.exe",
+          "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+      },
+      "Git Bash": {
+        "source": "Git Bash"
+      },
+      "PowerShell-5.1": {
+        "color": "terminal.ansiCyan",
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+      }
+    },
+    "debug.openDebug": "openOnDebugBreak",
+    "editor.tabCompletion": "off",
+    "files.defaultLanguage": "",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "powershell.buttons.showPanelMovementButtons": false,
+    "powershell.codeFolding.showLastLine": true,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "One Dark Darker",
+    //"workbench.colorTheme": "Pop N' Lock Theme by Luxcium ✨",
+    "hediet.vscode-drawio.resizeImages": null,
+    "powershell.codeFormatting.useConstantStrings": true,
+    "powershell.codeFormatting.whitespaceBeforeOpenBrace": false,
+    "powershell.codeFormatting.whitespaceBeforeOpenParen": false,
+    "powershell.codeFormatting.whitespaceInsideBrace": false,
+    "files.associations": {
+        "*.pjson": "jsonc",
+        "*.ps_json": "powershell"
+    },
+
+
+
+ // :: ** GLOBAL ** CUSTOM SETTINGS RELATED TO TEXT BY LANGUAGE
+ "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "source.python storage.type.function"
+        ],
+        "settings": {
+          "foreground": "#d31e8d",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.python entity.name.function",
+          "source.python meta.function-call.python",
+          "source.python variable.parameter",
+          "source.python punctuation"
+        ],
+        "settings": {
+          "foreground": "#1f87ff",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.python comment"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.python string.quoted.multi.python",
+          "source.python string.quoted.single.python",
+          "source.python string",
+          "source.python punctuation.definition.string.begin.python",
+          "source.python punctuation.definition.string.end.python"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.python variable.parameter.function.language.special.self.python",
+          "source.python variable.language.special.self.python"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.sql comment.line.double-dash.sql"
+        ],
+        "settings": {
+          "foreground": "#666677",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "source.sql constant.other.database-name.sql"
+        ],
+        "settings": {
+          "foreground": "#d31e8d",
+          "fontStyle": "bold underline"
+        }
+      },
+      {
+        "scope": [
+          "source.sql constant.other.table-name.sql"
+        ],
+        "settings": {
+          "foreground": "#cd248c",
+          "fontStyle": "underline"
+        }
+      },
+      {
+        "scope": [
+          "source.sql punctuation.definition.string.begin.sql"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.sql punctuation.definition.string.end.sql"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.sql string.quoted.single.sql"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.sql keyword.other.DML.sql"
+        ],
+        "settings": {
+          "foreground": "#BA3F50",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.python storage.type"
+        ],
+        "settings": {
+          "foreground": "#BA3F50",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.python keyword.operator.logical"
+        ],
+        "settings": {
+          "foreground": "#BA3F50",
+          "fontStyle": "underline"
+        }
+      },
+      {
+        "scope": [
+          "source.python support.function.builtin",
+          "source.python punctuation.definition.arguments.begin.python",
+          "source.python punctuation.definition.arguments.end.python"
+        ],
+        "settings": {
+          "foreground": "#e4860a",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "entity.other.attribute-name.html"
+        ],
+        "settings": {
+          "foreground": "#1f87ff",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "text.html meta.tag entity.name.tag",
+          "text.html meta.tag punctuation.definition.tag"
+        ],
+        "settings": {
+          "foreground": "#d31e8d",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "punctuation"
+        ],
+        "settings": {
+          "foreground": "#1f87ff",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "text.html.derivative comment.block.html"
+        ],
+        "settings": {
+          "foreground": "#666677",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.js entity.name.function",
+          "punctuation.definition.string.begin.js",
+          "punctuation.definition.string.end.js",
+          "punctuation.terminator.statement.js"
+        ],
+        "settings": {
+          "foreground": "#d51e52",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "string.quoted.double.js"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "comment.line.double-slash.js"
+        ],
+        "settings": {
+          "foreground": "#666677",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.json meta.structure.dictionary.json"
+        ],
+        "settings": {
+          "foreground": "#d51e52",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.js storage.type.function",
+          "source.js meta.block meta.var.expr storage.type"
+        ],
+        "settings": {
+          "foreground": "#d31e8d",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "punctuation.definition.string.begin.js",
+          "punctuation.definition.string.end.js"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.js variable.other.constant",
+          "source.js variable.other.object"
+        ],
+        "settings": {
+          "foreground": "#1f87ff",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.js variable.other.property"
+        ],
+        "settings": {
+          "foreground": "#1f87ff",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.css support.function",
+          "source.css support.constant.color.w3c-standard-color-name.css"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.css meta.selector entity.name.tag"
+        ],
+        "settings": {
+          "foreground": "#d31e8d",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.css meta.property-list meta.property-name support.type.property-name.css"
+        ],
+        "settings": {
+          "foreground": "#1f87ff",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.css support.constant.font-name.css",
+          "source.css meta.property-value.css"
+        ],
+        "settings": {
+          "foreground": "#e6ad1e",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "source.css punctuation.separator.key-value",
+          "source.css punctuation.terminator.rule.css"
+        ],
+        "settings": {
+          "foreground": "#7a82da",
+          "fontStyle": ""
+        }
+      },
+      // powershell ---------------------------------------------
+      // (-not, -and, -or...)
+      {
+        "scope": [
+          "source.powershell keyword.operator.logical.powershell"
+        ],
+        "settings": {
+          "foreground": "#ff6480",
+          "fontStyle": "bold"
+        }
+      }
+      // (functions)
+      ,{
+        "scope": [
+          "source.powershell support.function.powershell",
+          "source.powershell entity.name.function.powershell"
+        ],
+        "settings": {
+          "foreground": "#fa2169",
+          "fontStyle": ""
+        }
+      }
+      // (=, +=, function paramter tick (Get-Host -Path))
+      ,{
+        "scope": [
+          "source.powershell keyword.operator.assignment.powershell"
+        ],
+        "settings": {
+          "foreground": "#7a82da",
+          "fontStyle": ""
+        }
+      }
+      // (single-line comment)
+      ,{
+        "scope": [
+          "source.powershell comment.line",
+          "source.powershell punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#636d83",
+          "fontStyle": "italic bold"
+        }
+      }
+      // ([],{},())
+      ,{
+        "scope": [
+          "source.powershell punctuation.section.bracket.begin.powershell",
+          "source.powershell punctuation.section.bracket.end.powershell",
+          "source.powershell punctuation.section.braces.begin.powershell",
+          "source.powershell punctuation.section.braces.end.powershell",
+          "source.powershell punctuation.section.group.begin.powershell",
+          "source.powershell punctuation.section.group.end.powershell"
+        ],
+        "settings": {
+          "foreground": "#10b1fe",
+          "fontStyle": "bold"
+        }
+      }
+      // (switch, if, else)
+      ,{
+        "scope": [
+          "source.powershell keyword.control.powershell",
+          "source.powershell storage.type.powershell"
+        ],
+        "settings": {
+          "foreground": "#10b1fe",
+          "fontStyle": "bold"
+        }
+      }
+      // $varaibles
+      ,{
+        "scope": [
+          "source.powershell punctuation.definition.variable.powershell",
+          "source.powershell variable.other.readwrite.powershell"
+        ],
+        "settings": {
+          "foreground": "#f9c859",
+          "fontStyle": ""
+        }
+      }
+      // @{} hashtable
+      ,{
+        "scope": [
+          "source.powershell keyword.other.hashtable.begin.powershell"
+        ],
+        "settings": {
+          "foreground": "#ff78f8",
+          "fontStyle": ""
+        }
+      }
+      //  $true, $false
+      ,{
+        "scope": [
+          "source.powershell constant.language.powershell"
+        ],
+        "settings": {
+          "foreground": "#ff78f8",
+          "fontStyle": "italic"
+        }
+      }
+      // constant psscriptroot
+      ,{
+        "scope": [
+          "source.powershell support.variable.automatic.powershell"
+        ],
+        "settings": {
+          "foreground": "#10b1fe",
+          "fontStyle": ""
+        }
+      }
+      // variable members
+      ,{
+        "scope": [
+          "source.powershell variable.other.member.powershell"
+        ],
+        "settings": {
+          "foreground": "#3691ff",
+          "fontStyle": ""
+        }
+      }
+      // function operator
+      ,{
+        "scope": [
+          "source.powershell meta.group.simple.subexpression.powershell"
+        ],
+        "settings": {
+          "foreground": "#3691ff",
+          "fontStyle": ""
+        }
+      }
+      // -eq
+      ,{
+        "scope": [
+          "source.powershell keyword.operator.comparison.powershell"
+        ],
+        "settings": {
+          "foreground": "#ff6480",
+          "fontStyle": "italic"
+        }
+      }
+      // terminator
+      ,{
+        "scope": [
+          "source.powershell punctuation.terminator.statement.powershell"
+        ],
+        "settings": {
+          "foreground": "#ffffff",
+          "fontStyle": "bold"
+        }
+      }
+      // string
+      ,{
+        "scope": [
+          "source.powershell string.quoted.double.powershell"
+        ],
+        "settings": {
+          "foreground": "#ffaf64",
+          "fontStyle": ""
+        }
+      }
+      // string
+      ,{
+        "scope": [
+          "source.powershell punctuation.definition.string.begin.powershell",
+          "source.powershell punctuation.definition.string.end.powershell"
+        ],
+        "settings": {
+          "foreground": "#ff78f8",
+          "fontStyle": "bold"
+        }
+      }
+      // ----------------------------------------- (MARKDOWN) ----------------------------------------- //
+    ]
+  },
+  "mssql.objectExplorer.groupBySchema": false,
+  "files.autoSave": "afterDelay",
+  "todohighlight.isEnable": false,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+      {
+          "text":             "#  TODO: ",
+          "color":            "#0073ff",
+         // "border":           "1.5px solid lighblue",
+          "borderRadius":     "4px",
+          "backgroundColor":  "#0C090A",
+          //other styling properties goes here ... 
+      },
+      {
+        "text":             "#  NOTE:",
+        "color":            "#f97900",
+      //  "border":           "1.5px solid orange",
+        "borderRadius":     "4px",
+        "backgroundColor":  "#0C090A",
+        //other styling properties goes here ... 
+      }
+  ],
+  // ----------------------------------------- (MARKDOWN) ----------------------------------------- //
+  //"todohighlight.keywordsPattern": "# .*|## .*|### .*",
+  //"todohighlight.defaultStyle": {
+      //"color":              "#797e8a",
+      //"backgroundColor":    "#363b47",
+      //"overviewRulerColor": "#363b47",
+      //"cursor":             "pointer",
+      //"border": "1px solid #eee",
+      //"borderRadius":       "6px",
+      //"isWholeLine":        false,
+      //other styling properties goes here ... 
+ // },
+  
+  "todohighlight.include": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.html",
+      "**/*.php",
+      "**/*.css",
+      "**/*.scss"
+  ],
+  "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**"
+  ],
+  //"todohighlight.maxFilesForSearch": 5120,
+  "todohighlight.toggleURI": true,
+
+  "git.enableSmartCommit": true,
+
+  "git.confirmSync": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "[jsonc]": {
+  
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "hediet.vscode-drawio.theme": "dark",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "git.autofetch": true
+}
